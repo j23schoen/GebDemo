@@ -1,0 +1,26 @@
+#Exclude IntelliJIDEA specific files
+/.idea
+*.iml
+
+#Exclude Eclipse specific files
+.classpath
+.project
+/.settings
+
+#Exclude git folder
+/.git
+.gitignore.swp
+
+#Exclude output folder
+/target/**
+/out/**
+/target-eclipse/**
+*.class
+*.war
+
+#Ignore other specific stuff
+*.bytes
+*.temp
+*.zip
+/.slcache
+/.slcache/**
