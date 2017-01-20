@@ -4,7 +4,7 @@ This is the Geb configuration file.
         See: http://www.gebish.org/manual/current/configuration.html
 */
 
-//To Run Geb Tests use the dev grails environment:  grails dev test-app functional:
+//To Run Geb Tests use the dev grails environment:  grails dev test-app -Dgeb.env=chromeLocal functional:
 
 import org.openqa.selenium.chrome.ChromeDriver
 
