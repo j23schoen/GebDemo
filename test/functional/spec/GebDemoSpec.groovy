@@ -2,11 +2,20 @@ package spec
 
 import geb.spock.GebSpec
 import pages.GebDemoPage
+import pages.HomePage
 
 class GebDemoSpec extends GebSpec {
 
     def setupSpec() {
         GebDemoPage.url = "${baseUrl}gebDemo/seinfeld"
+    }
+
+    def "test navigation to the geb demo page" () {
+        given: "I'm at the home page"
+        to HomePage
+        when: "I click the Seinfeld link"
+        linkToSeinfeld.click()
+        then: "I'm at the Seinfeld Demo Page"
     }
 
     def "test that the character name fields are populated after clicking go"() {

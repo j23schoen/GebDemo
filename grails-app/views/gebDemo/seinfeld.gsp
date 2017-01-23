@@ -20,6 +20,7 @@
 </head>
 
 <body class="container">
+<a href="${createLink(uri: '/')}">Home</a>
 <h1 style="text-align: center;">Welcome to Geb - Seinfeld Example</h1>
 <div>&nbsp;</div>
 <form class="form-horizontal">
