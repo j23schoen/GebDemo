@@ -81,6 +81,9 @@ class GebDemoSpec extends GebSpec {
         form.favoriteLanguage = "Groovy"
         and: "I click submit"
         submitButton.click()
+        waitFor {
+            submissionMessage.displayed
+        }
         then: "A message will say the form is submitted"
         submissionMessage.text() == "Form Submitted"
     }
