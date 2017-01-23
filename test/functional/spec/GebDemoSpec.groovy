@@ -6,7 +6,7 @@ import pages.GebDemoPage
 class GebDemoSpec extends GebSpec {
 
     def setupSpec() {
-        GebDemoPage.url = "${baseUrl}gebDemo/gebby"
+        GebDemoPage.url = "${baseUrl}gebDemo/seinfeld"
     }
 
     def "test that the character name fields are populated after clicking go"() {

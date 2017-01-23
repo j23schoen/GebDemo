@@ -6,8 +6,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <g:javascript src="waitingfor.js"/>
-    <g:javascript src="gebDemoJS.js"/>
+    <script src="../js/waitingfor.js"></script>
+    <script src="../js/gebDemoJS.js"></script>
 
     <script>
         $(document).ready(function(){

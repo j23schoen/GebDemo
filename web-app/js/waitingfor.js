@@ -28,7 +28,7 @@
 			$dialog.remove();
 		}
 		return $(
-			'<div class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true" style="padding-top:15%; overflow-y:visible;">' +
+			'<div class="modal fade" id="waitingDialog" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true" style="padding-top:15%; overflow-y:visible;">' +
 				'<div class="modal-dialog modal-m">' +
 					'<div class="modal-content">' +
 						'<div class="modal-header" style="display: none;"></div>' +
