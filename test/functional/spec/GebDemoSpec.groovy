@@ -6,10 +6,6 @@ import pages.HomePage
 
 class GebDemoSpec extends GebSpec {
 
-    def setupSpec() {
-        GebDemoPage.url = "${baseUrl}gebDemo/seinfeld"
-    }
-
     def "test navigation to the geb demo page" () {
         given: "I'm at the home page"
         to HomePage
