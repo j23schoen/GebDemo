@@ -59,4 +59,6 @@ class GebDemoController {
         ]
         render fullInformation as JSON
     }
+
+    def simpleFormFillout() {}
 }

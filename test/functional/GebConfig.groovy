@@ -9,9 +9,12 @@ This is the Geb configuration file.
 import org.openqa.selenium.chrome.ChromeDriver
 
 driver = {
-
+    System.setProperty('webdriver.chrome.driver', 'C:\\drivers\\chromedriver.exe')
+    new ChromeDriver()
 }
 
+//different environments can be set up to use a different baseUrl for a server you want to hit, for example
+//the chromeLocal environment will spin up a local host
 environments {
 
     chromeLocal {
@@ -19,6 +22,7 @@ environments {
             System.setProperty('webdriver.chrome.driver', 'C:\\drivers\\chromedriver.exe')
             new ChromeDriver()
         }
+        //this variable will not close the window after tests have run
         quitCachedDriverOnShutdown = false
     }
 }

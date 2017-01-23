@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Geb Demo</title>
-    <link rel="stylesheet" href="css/style.css"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
@@ -14,9 +13,13 @@
 <h4>The spec file has already been created as well with 4 basic tests.</h4>
 
 <p>To run the geb tests from the command line.. <pre><code>grails dev test-app -Dgeb.env=chromeLocal functional: GebDemoSpec</code></pre></p>
+<p>The app is also configured to use chrome in the default environment, so to make life easier you can run..<pre><code>grails dev test-app functional:</code></pre></p>
 <p>If you create additional tests, you can comma delimit the spec files. To run all functional tests, don't specify any files after <code>functional:</code></p>
 <div id="seinfeldLink">
     <g:link controller="gebDemo" action="seinfeld">Click here to go to the Seifneld page</g:link>
+</div>
+<div id="formLink">
+    <g:link controller="gebDemo" action="simpleFormFillout">Click here to go to the form page</g:link>
 </div>
 
 </body>

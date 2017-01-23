@@ -9,6 +9,14 @@ var gebDemo = {
         init: function () {
             gebDemo.events.registerFindCharactersButton();
             gebDemo.events.registerSelectName();
+            gebDemo.events.registerSubmitButton();
+        },
+
+        registerSubmitButton: function () {
+            $("#submit").on("click", function () {
+                $("#success").show();
+                $("form").remove();
+            });
         },
 
         registerFindCharactersButton: function () {

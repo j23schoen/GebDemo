@@ -1,8 +1,10 @@
 package spec
 
 import geb.spock.GebSpec
+import pages.FormPage
 import pages.GebDemoPage
 import pages.HomePage
+import spock.lang.IgnoreRest
 
 class GebDemoSpec extends GebSpec {
 
@@ -59,6 +61,28 @@ class GebDemoSpec extends GebSpec {
         characterSelected.text() == "Real Name: Jerry Seinfeld"
         ageOfCharacter.text() == "Age: 62"
         netWorthOfCharacter.text() == "Net Worth: \$800 million"
+    }
+
+    def "test I can navigate to the form page" () {
+        given: "I'm at the home page"
+        to HomePage
+        when: "I click the link to go to the form page"
+        linkToForm.click()
+        then: "I'm at the form page"
+    }
+
+    def "test that I can fill out form fields and submit the form" () {
+        given: "I am at the form page"
+        to FormPage
+        when: "I fill out the form fields"
+        form.firstName = "Justin"
+        form.lastName = "Schoen"
+        form.age = 23
+        form.favoriteLanguage = "Groovy"
+        and: "I click submit"
+        submitButton.click()
+        then: "A message will say the form is submitted"
+        submissionMessage.text() == "Form Submitted"
     }
 
 }

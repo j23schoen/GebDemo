@@ -13,6 +13,7 @@ class HomePage extends Page {
     static content = {
         header { $("h1")}
         linkToSeinfeld(to: GebDemoPage) { $("div#seinfeldLink").children("a")}
+        linkToForm(to: FormPage) { $("div#formLink").children("a")}
     }
 
 }
