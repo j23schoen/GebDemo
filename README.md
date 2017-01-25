@@ -13,7 +13,7 @@ To specify grails environments:
 <code>grails dev test-app -Dgrails.env=backupDB functional:</code>
 
 To specify a geb environment in the GebConfig.groovy class:
-<code>grails dev test-app -Dgeb.env=chrome functional:</code>
+<code>grails dev -Dgeb.env=chrome test-app functional:</code>
 
 To specify a certain spec file:
 <code>grails dev test-app functional: GebDemoSpec</code>
