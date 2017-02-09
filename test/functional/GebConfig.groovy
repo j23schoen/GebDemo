@@ -11,7 +11,8 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver
 import org.openqa.selenium.remote.DesiredCapabilities
 
 driver = {
-    System.setProperty('webdriver.chrome.driver', 'C:\\drivers\\chromedriver.exe')
+    baseUrl = "http://localhost:8080/Geb-Demo-0.1/"
+    System.setProperty('webdriver.chrome.driver', '//usr/local/chromeDriver/chromedriver')
     new ChromeDriver()
 }
 
@@ -21,14 +22,15 @@ environments {
 
     chromeLocal {
         driver = {
-            System.setProperty('webdriver.chrome.driver', 'C:\\drivers\\chromedriver.exe')
+            baseUrl = "http://localhost:8080/Geb-Demo-0.1/"
+            System.setProperty('webdriver.chrome.driver', '//usr/local/chromeDriver/chromedriver')
             new ChromeDriver()
         }
         //this variable will not close the window after tests have run
         quitCachedDriverOnShutdown = false
     }
 
-    phantomLinux {
+    phantomMac {
         driver = {
             baseUrl = "http://localhost:8080/Geb-Demo-0.1/"
             System.setProperty('phantomjs.binary.path', '//usr/local/phantomjs/bin/phantomjs')

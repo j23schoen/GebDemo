@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title>Geb Demo</title>
+    <title></title>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -21,7 +21,7 @@
 
 <body class="container">
 <a href="${createLink(uri: '/')}">Home</a>
-<h1 style="text-align: center;">Welcome to Geb - Seinfeld Example</h1>
+<h1 style="text-align: center;">Cojug is king</h1>
 <div>&nbsp;</div>
 <form class="form-horizontal">
     <div class="form-group row" id="creatorDiv">
