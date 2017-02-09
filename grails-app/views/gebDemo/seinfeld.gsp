@@ -21,7 +21,7 @@
 
 <body class="container">
 <a href="${createLink(uri: '/')}">Home</a>
-<h1 style="text-align: center;">Cojug is king</h1>
+<h1 style="text-align: center;">Welcome to Geb - Seinfeld Example</h1>
 <div>&nbsp;</div>
 <form class="form-horizontal">
     <div class="form-group row" id="creatorDiv">
