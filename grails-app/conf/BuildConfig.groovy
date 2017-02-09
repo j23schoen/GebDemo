@@ -55,6 +55,16 @@ grails.project.dependency.resolution = {
         test "org.gebish:geb-spock:1.0"
         test "org.seleniumhq.selenium:selenium-chrome-driver:2.31.0"
         test "org.seleniumhq.selenium:selenium-support:2.33.0"
+        test( "com.github.detro.ghostdriver:phantomjsdriver:1.1.0" ) {
+            transitive = false
+            //  exclude "xml-apis"
+            //  exclude "xercesImpl"
+        }
+        test ("org.seleniumhq.selenium:selenium-remote-driver:2.33.0") { // Needed by phantomjsdriver
+            //exclude "xerces"
+            //exclude "xercesImpl"
+        }
+
     }
 
     plugins {
@@ -66,8 +76,6 @@ grails.project.dependency.resolution = {
         compile ':cache:1.1.7'
 
         // plugins needed at runtime but not for compilation
-        runtime ":hibernate:3.6.10.16" // or ":hibernate4:4.3.5.4"
-        runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
         runtime ":resources:1.2.8"
 
