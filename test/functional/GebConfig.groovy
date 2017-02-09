@@ -30,7 +30,7 @@ environments {
 
     phantomLinux {
         driver = {
-            System.setProperty('webdriver.phantom.driver', '//usr/local/phantomjs/bin/phantomjs')
+            System.setProperty('phantomjs.binary.path', '//usr/local/phantomjs/bin/phantomjs')
             driver = new PhantomJSDriver(new DesiredCapabilities())
             driver
         }
