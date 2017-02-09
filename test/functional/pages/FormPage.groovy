@@ -4,7 +4,7 @@ import geb.Page
 
 class FormPage extends Page {
 
-    static url = "gebDemo/simpleFormFillout"
+    static url = "gebDemo/simpleFormLayout"
 
     static at = {
         header.text() == "Form Completion"

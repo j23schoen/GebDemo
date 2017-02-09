@@ -8,12 +8,16 @@ import spock.lang.IgnoreRest
 
 class GebDemoSpec extends GebSpec {
 
+    def setupSpec() {
+    }
+
     def "test navigation to the geb demo page" () {
         given: "I'm at the home page"
         to HomePage
         when: "I click the Seinfeld link"
         linkToSeinfeld.click()
         then: "I'm at the Seinfeld Demo Page"
+        at GebDemoPage
     }
 
     def "test that the character name fields are populated after clicking go"() {
@@ -69,6 +73,7 @@ class GebDemoSpec extends GebSpec {
         when: "I click the link to go to the form page"
         linkToForm.click()
         then: "I'm at the form page"
+        at FormPage
     }
 
     def "test that I can fill out form fields and submit the form" () {
