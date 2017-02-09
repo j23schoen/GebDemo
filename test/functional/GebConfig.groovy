@@ -30,6 +30,7 @@ environments {
 
     phantomLinux {
         driver = {
+            baseUrl = "http://localhost:8080/Geb-Demo-0.1/"
             System.setProperty('phantomjs.binary.path', '//usr/local/phantomjs/bin/phantomjs')
             driver = new PhantomJSDriver(new DesiredCapabilities())
             driver
