@@ -40,8 +40,8 @@ class GebDemoSpec extends GebSpec {
     def "test that typing a selecting a character from the search field will populate a little blurb about them" () {
         given: "I'm at the geb demo page"
         to HomePage
-        to GebDemoPage
         linkToSeinfeld.click()
+        to GebDemoPage
         when: "I click the go button"
         clickGo()
         and: "I type 'n' in the search field"
