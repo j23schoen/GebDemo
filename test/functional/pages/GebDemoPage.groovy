@@ -17,8 +17,8 @@ class GebDemoPage extends Page {
         header { $("h1")}
         findCharactersButton { $("button#findCharacters")}
         jerrySeinfeld { $("li", id: "character0") }
-        kramer { $("li", 1) }
-        georgeCostanza { $("#character2") }
+        kramer { $("ul#charactersFound").children("li#character1") }
+        georgeCostanza { $("li#character2") }
         elaineBenes { $("#character3") }
         newman { $("#character4") }
         searchField { $("#searchForName").module(TextInput)}
