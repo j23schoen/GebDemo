@@ -16,6 +16,8 @@ driver = {
     new ChromeDriver()
 }
 
+quitCachedDriverOnShutdown = false
+
 //different environments can be set up to use a different baseUrl for a server you want to hit, for example
 //the chromeLocal environment will spin up a local host
 environments {

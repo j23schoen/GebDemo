@@ -7,7 +7,7 @@ import modules.AutocompleteWidgetModule
 
 class GebDemoPage extends Page {
 
-    static url = "gebDemo/seinfeld"
+    static url
 
     static at = {
         header.text() == "Welcome to Geb - Seinfeld Example"

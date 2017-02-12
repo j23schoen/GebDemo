@@ -9,7 +9,11 @@ import spock.lang.IgnoreRest
 class GebDemoSpec extends GebSpec {
 
     def setupSpec() {
+        HomePage.url = getBaseUrl()
+        GebDemoPage.url = "${getBaseUrl()}gebDemo/seinfeld"
+        FormPage.url = "${getBaseUrl()}gebDemo/simpleFormFillout"
     }
+
 
     def "test navigation to the geb demo page" () {
         given: "I'm at the home page"
