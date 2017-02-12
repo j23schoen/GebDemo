@@ -35,7 +35,7 @@ environments {
     phantomMac {
         driver = {
             baseUrl = "http://localhost:8080/Geb-Demo-0.1/"
-            System.setProperty('phantomjs.binary.path', '//usr/local/phantomjs/bin/phantomjs')
+            System.setProperty('phantomjs.binary.path', '//usr/local/Cellar/phantomjs/2.1.1/bin/phantomjs')
             driver = new PhantomJSDriver(new DesiredCapabilities())
             driver
         }
