@@ -57,12 +57,8 @@ grails.project.dependency.resolution = {
         test "org.seleniumhq.selenium:selenium-support:2.33.0"
         test( "com.github.detro.ghostdriver:phantomjsdriver:1.1.0" ) {
             transitive = false
-            //  exclude "xml-apis"
-            //  exclude "xercesImpl"
         }
         test ("org.seleniumhq.selenium:selenium-remote-driver:2.33.0") { // Needed by phantomjsdriver
-            //exclude "xerces"
-            //exclude "xercesImpl"
         }
 
     }
